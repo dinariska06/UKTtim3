@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile - KITS SMKN 1 Nglegok</title>
+  <style>
+    :root {
+      --biru-tua: #003366;
+      --biru-muda: #66ccff;
+      --putih: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--putih);
+      color: var(--biru-tua);
+    }
+
+    header {
+      background-color: var(--biru-tua);
+      color: var(--putih);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: var(--putih);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    .profile-box {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .profile-box img {
+      width: 250px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .profile-box h2 {
+      margin-bottom: 10px;
+    }
+
+    .socials a {
+      display: inline-block;
+      margin: 5px 10px;
+      text-decoration: none;
+      color: var(--biru-tua);
+      background-color: var(--biru-muda);
+      padding: 8px 15px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .socials a:hover {
+      background-color: var(--biru-tua);
+      color: var(--putih);
+    }
+
+    .astamarga-section {
+      max-width: 1000px;
+      margin: 40px auto 0;
+      text-align: center;
+    }
+
+    .astamarga-section h2 {
+      margin-bottom: 20px;
+    }
+
+    .astamarga-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
+    }
+
+    .astamarga-card {
+      background-color: var(--biru-muda);
+      border-radius: 12px;
+      padding: 20px;
+      color: var(--biru-tua);
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: var(--biru-tua);
+      color: var(--putih);
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KITS SMKN 1 Nglegok</h1>
+    <nav>
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="galery.html">Galery</a></li>
+        <li><a href="proker.html">Proker</a></li>
+      </ul>
+    </nav>
+    <img src="logo.png" alt="Logo KITS" class="logo" />
+  </header>
+
+  <main>
+    <div class="profile-box">
+      <img src="outbond vers2.jpg" alt="Foto Anggota" />
+      <h2>Komunitas IT SMKN 1 Nglegok (KITS)</h2>
+      <p>Komunitas IT SMKN 1 Nglegok merupakan wadah bagi siswa-siswi yang memiliki minat dan bakat di bidang teknologi informasi. Dibentuk sebagai ruang kolaborasi dan pengembangan diri, komunitas ini berfokus pada peningkatan keterampilan praktis dalam dunia IT serta penanaman nilai kerja sama dan inovasi.</p> 
+      <div class="socials">
+        <a href="https://www.instagram.com/for.kits" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@for.kits" target="_blank">TikTok</a>
+        <a href="https://www.youtube.com/@KITSMEDIA" target="_blank">YouTube</a>
+      </div>
+    </div>
+
+    <div class="astamarga-section">
+      <h2>ASTAMARGA KITS</h2>
+      <div class="astamarga-grid">
+        <div class="astamarga-card"><strong>1. Religius:</strong> Melandaskan semua niat dan tindakan untuk ibadah serta meningkatkan keimanan dan ketakwaan.</div>
+        <div class="astamarga-card"><strong>2. Mandiri:</strong> Belajar dan beraktivitas tanpa bergantung pada orang lain.</div>
+        <div class="astamarga-card"><strong>3. Beretika:</strong> Menjaga sopan santun dan adab terhadap guru serta orang yang lebih tua.</div>
+        <div class="astamarga-card"><strong>4. Kreatif:</strong> Mengembangkan ide-ide kreatif sesuai perkembangan zaman.</div>
+        <div class="astamarga-card"><strong>5. Inovatif:</strong> Selalu berinovasi dan menyesuaikan diri dengan kebutuhan masa kini.</div>
+        <div class="astamarga-card"><strong>6. Bekerja Keras:</strong> Pantang menyerah dan tidak mudah putus asa dalam menghadapi tantangan.</div>
+        <div class="astamarga-card"><strong>7. Bertanggung Jawab:</strong> Menjalankan amanah dengan sungguh-sungguh dan penuh komitmen.</div>
+        <div class="astamarga-card"><strong>8. Bermanfaat:</strong> Menjadi pribadi yang berguna bagi lingkungan dengan menerapkan nilai-nilai sebelumnya.</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Komunitas IT SMKN 1 Nglegok</p>
+  </footer>
+</body>
+</html>

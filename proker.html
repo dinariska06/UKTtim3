@@ -1,0 +1,134 @@
+<!-- proker.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proker - KITS SMKN 1 Nglegok</title>
+  <style>
+    :root {
+      --biru-tua: #003366;
+      --biru-muda: #66ccff;
+      --putih: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--putih);
+      color: var(--biru-tua);
+    }
+
+    header {
+      background-color: var(--biru-tua);
+      color: var(--putih);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: var(--putih);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .proker-list {
+      list-style: none;
+      background-color: var(--biru-muda);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .proker-list li {
+      padding: 15px;
+      margin-bottom: 10px;
+      background-color: var(--putih);
+      border-left: 6px solid var(--biru-tua);
+      transition: background-color 0.3s;
+    }
+
+    .proker-list li:hover {
+      background-color: #e6f7ff;
+    }
+
+    footer {
+      background-color: var(--biru-tua);
+      color: var(--putih);
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Halaman Proker dimuat");
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>KITS SMKN 1 Nglegok</h1>
+    <nav>
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="galery.html">Galery</a></li>
+        <li><a href="proker.html">Proker</a></li>
+      </ul>
+    </nav>
+    <img src="logo.png" alt="Logo KITS" class="logo" />
+  </header>
+
+  <main>
+    <h2>Program Kerja KITS</h2>
+    <ul class="proker-list">
+      <li>Pengenalan KITS dengan murid baru TKJ (Teknik Komputer dan Jaringan)</li>
+      <li>Recruitment anggota baru KOMUNITAS IT</li>
+      <li>Pembuatan Baju PDL</li>
+      <li>Pemilihan Formatur & Ketua baru</li>
+      <li>Reorganisasi Jabatan Komunitas IT</li>
+      <li>Latihan Dasar Kepemimpinan (LDK)</li>
+      <li>Outbond dan Sertijab (Serah Terima Jabatan)</li>
+      <li>Bootcamp (Mengejar Materi) Agar lebih unggul daripada murid TKJ lain</li>
+      <li>Ivention (IT Festifal Netwrork Competition) Lomba Internal TKJ</li>
+      <li>BUKBER Komunitas IT</li>
+      <li>Milad Komunitas IT</li>
+      <li>Ujian Kenaikan Tingkat</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Komunitas IT SMKN 1 Nglegok</p>
+  </footer>
+</body>
+</html>
