@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beranda - KITS SMKN 1 Nglegok</title>
+  <style>
+    :root {
+      --biru-tua: #003366;
+      --biru-muda: #66ccff;
+      --putih: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--putih);
+      color: var(--biru-tua);
+    }
+
+    header {
+      background-color: var(--biru-tua);
+      color: var(--putih);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: var(--putih);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      margin-bottom: 30px;
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #333;
+      font-size: 16px;
+    }
+
+    .info-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .info-box {
+      background-color: var(--biru-muda);
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: left;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .info-box img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .cta-button {
+      margin-top: 30px;
+      padding: 10px 25px;
+      background-color: var(--biru-tua);
+      color: var(--putih);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .cta-button:hover {
+      background-color: #001f4d;
+    }
+
+    footer {
+      background-color: var(--biru-tua);
+      color: var(--putih);
+      text-align: center;
+      padding: 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>KITS SMKN 1 Nglegok</h1>
+    <nav>
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="galery.html">Galery</a></li>
+        <li><a href="proker.html">Proker</a></li>
+      </ul>
+    </nav>
+    <img src="logo.png" alt="Logo KITS" class="logo" />
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Selamat Datang di Website KITS SMKN 1 Nglegok</h2>
+      <p>Silakan navigasi menggunakan menu di atas untuk melihat informasi komunitas kami.</p>
+    </section>
+
+    <div class="info-container">
+      <div class="info-box">
+        <img src="diklat.jpeg" alt="Kegiatan 1">
+        <h3>Diklat Komunitas</h3>
+        <p>Suasana belajar yang seru dan interaktif untuk memperkuat skill dan semangat kolaborasi antar anggota komunitas.</p>
+      </div>
+      <div class="info-box">
+        <img src="bootc.jpeg" alt="Kegiatan 2">
+        <h3>Push Materi</h3>
+        <p>Meningkatkan kemampuan belajar dengan ahli IT</p>
+      </div>
+      <div class="info-box">
+        <img src="outbond.jpeg" alt="Kegiatan 3">
+        <h3>Outbond</h3>
+        <p>Membangun kekompakan, kepemimpinan, dan kerja sama tim melalui aktivitas seru dan menantang di alam terbuka.</p>
+      </div>
+    </div>
+
+    <button class="cta-button" onclick="window.location.href='login.html'">Gabung Komunitas</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Komunitas IT SMKN 1 Nglegok</p>
+  </footer>
+
+</body>
+</html>

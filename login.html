@@ -1,0 +1,150 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - KITS SMKN 1 Nglegok</title>
+  <style>
+    :root {
+      --biru-tua: #003366;
+      --biru-muda: #66ccff;
+      --putih: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--putih);
+      color: var(--biru-tua);
+    }
+
+    header {
+      background-color: var(--biru-tua);
+      color: var(--putih);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: var(--putih);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    main {
+      padding: 50px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .login-box {
+      background-color: var(--biru-muda);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: var(--biru-tua);
+      color: var(--putih);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .login-box button:hover {
+      background-color: #001f4d;
+    }
+
+    footer {
+      background-color: var(--biru-tua);
+      color: var(--putih);
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+
+  <script>
+    function handleLogin() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username === "admin" && password === "kits") {
+        alert("Login berhasil!");
+        window.location.href = "profile.html";
+      } else {
+        alert("Username atau password salah.");
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>KITS SMKN 1 Nglegok</h1>
+    <nav>
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="galery.html">Galery</a></li>
+        <li><a href="proker.html">Proker</a></li>
+      </ul>
+    </nav>
+    <img src="logo.png" alt="Logo KITS" class="logo">
+  </header>
+
+  <main>
+    <div class="login-box">
+      <h2>Login Anggota</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="handleLogin()">Masuk</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Komunitas IT SMKN 1 Nglegok</p>
+  </footer>
+
+</body>
+</html>

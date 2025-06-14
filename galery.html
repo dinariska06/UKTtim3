@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galery - KITS SMKN 1 Nglegok</title>
+  <style>
+    :root {
+      --biru-tua: #003366;
+      --biru-muda: #66ccff;
+      --putih: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--putih);
+      color: var(--biru-tua);
+    }
+
+    header {
+      background-color: var(--biru-tua);
+      color: var(--putih);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: var(--putih);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .galeri-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .galeri-container img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      object-fit: cover;
+      height: 150px;
+    }
+
+    .galeri-container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .caption {
+      text-align: center;
+      margin-top: 20px;
+      font-style: italic;
+    }
+
+    footer {
+      background-color: var(--biru-tua);
+      color: var(--putih);
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    /* Responsif */
+    @media (max-width: 1000px) {
+      .galeri-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .galeri-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("Galeri dimuat");
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>KITS SMKN 1 Nglegok</h1>
+    <nav>
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="galery.html">Galery</a></li>
+        <li><a href="proker.html">Proker</a></li>
+      </ul>
+    </nav>
+    <img src="logo.png" alt="Logo KITS" class="logo" />
+  </header>
+
+  <main>
+    <h2>Galeri Kegiatan KITS</h2>
+    <div class="galeri-container">
+      <!-- 15 Foto -->
+      <img src="foto1.jpg" alt="Foto 1">
+      <img src="foto2.jpg" alt="Foto 2">
+      <img src="foto3.jpg" alt="Foto 3">
+      <img src="foto4.jpg" alt="Foto 4">
+      <img src="foto12.JPG" alt="Foto 5">
+      <img src="foto6.jpg" alt="Foto 6">
+      <img src="foto7.jpg" alt="Foto 7">
+      <img src="foto8.jpg" alt="Foto 8">
+      <img src="foto9.jpg" alt="Foto 9">
+      <img src="foto10.jpg" alt="Foto 10">
+      <img src="outbond vers2.jpg" alt="Foto 11">
+      <img src="diklat.jpeg" alt="Foto 12">
+      <img src="outbond.jpeg" alt="Foto 13">
+      <img src="bootc.jpeg" alt="Foto 14">
+      <img src="foto11.JPG" alt="Foto 15">
+    </div>
+    <p class="caption">Dokumentasi kegiatan seru Komunitas IT SMKN 1 Nglegok.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Komunitas IT SMKN 1 Nglegok</p>
+  </footer>
+</body>
+</html>
